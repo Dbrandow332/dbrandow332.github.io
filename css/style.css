@@ -4,8 +4,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #D3D3D3;
+    background-image: url('../assets/tech.JPG');
+    background-color: #000; /* Optional fallback color */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the image fixed while scrolling */
+    background-position: center; /* Centers the image */
 }
+
 
 /* Navigation */
 header {
@@ -22,19 +29,19 @@ nav ul {
     padding: 0;
 }
 
-    nav ul li {
-        margin: 0 15px;
-    }
+nav ul li {
+    margin: 0 15px;
+}
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-            nav ul li a.active {
-                font-weight: bold;
-                text-decoration: underline;
-            }
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /* Main Content */
 main {
@@ -44,7 +51,7 @@ main {
 }
 
 h1, h2 {
-    color: #333;
+    color: #FFFFFF;
 }
 
 section {
@@ -94,7 +101,7 @@ form {
 }
 
     /* Input and Textarea Fields */
-    form input,form textarea {
+form input,form textarea {
     margin-bottom: 15px; /* Add space below each field */
     padding: 10px;
     font-size: 16px;
@@ -105,10 +112,10 @@ form {
 }
 
     /* Textarea Specific Styles */
-    form textarea {
-        min-height: 100px; /* Makes the textarea a decent size */
-        resize: vertical; /* Allow vertical resizing only */
-    }
+form textarea {
+    min-height: 100px; /* Makes the textarea a decent size */
+    resize: vertical; /* Allow vertical resizing only */
+}
 
     /* Submit Button */
 form button {
@@ -141,7 +148,9 @@ form button:hover {
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100%; /* Ensures the height fills the viewport */
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
 }
 
 .project-container {
@@ -165,42 +174,42 @@ html, body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-    .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-    .project-card img {
-        width: auto;
-        height: 100%
-    }
+.project-card img {
+    width: auto;
+    height: 100%
+}
 
-    .project-card h2 {
-        font-size: 1.5em;
-        margin: 10px 0;
-        color: #333;
-    }
+.project-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
 
-    .project-card p {
-        font-size: 1em;
-        color: #555;
-        margin: 0 15px 15px;
-    }
+.project-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 0 15px 15px;
+}
 
-    .project-details a, .project-card a {
-        display: inline-block;
-        margin: 10px 0 15px;
-        padding: 10px 15px;
-        background-color: #007BFF;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-    }
+.project-details a, .project-card a {
+    display: inline-block;
+    margin: 10px 0 15px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-        .project-card a:hover {
-            background-color: #0056b3;
-        }
+.project-card a:hover {
+    background-color: #0056b3;
+}
 
 .project-details {
     margin-top: 20px;
@@ -215,22 +224,25 @@ html, body {
     transition: all 0.3s ease-in-out;
 }
 
-    .project-details img {
-        max-width: 100%;
-        border-radius: 8px;
-        margin-bottom: 20px;
-    }
+.project-details img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
 
+.project-details h2 {
+    color: black;
+}
 
-    .project-details ul {
-        margin: 20px 0;
-        padding-left: 20px; /* Indentation for the list */
-    }
+.project-details ul {
+    margin: 20px 0;
+    padding-left: 20px; /* Indentation for the list */
+}
 
-        .project-details ul li {
-            margin-bottom: 10px;
-            line-height: 1.5;
-        }
+.project-details ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
 
 
 ul {
@@ -238,10 +250,10 @@ ul {
     padding-left: 20px;
 }
 
-    ul li {
-        margin-bottom: 10px;
-        line-height: 1.5;
-    }
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
 
 
 /* Fullscreen Image Section */
