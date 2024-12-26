@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     color: #D3D3D3;
-    background-image: url('../assets/tech.JPG');
+    background-image: url('../assets/tech.jpg');
     background-color: #000; /* Optional fallback color */
     background-size: cover; /* Ensures the image covers the entire page */
     background-repeat: no-repeat; /* Prevents the image from repeating */
